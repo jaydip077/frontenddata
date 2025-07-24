@@ -1,0 +1,6 @@
+what is website?
+    website is a connection of information or webpages i.e called website.
+
+types of website
+ a) static website
+ b) dynamic website
