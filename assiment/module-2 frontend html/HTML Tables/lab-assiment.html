@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Product Catalog</title>
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      padding: 12px;
+      border: 1px solid #ccc;
+      text-align: center;
+    }
+
+    img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+    }
+
+    .in-stock {
+      color: green;
+      font-weight: bold;
+    }
+
+    .out-of-stock {
+      color: red;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+<h1>Product Catalog</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Product Name</th>
+      <th>Product Image</th>
+      <th>Price</th>
+      <th>Description</th>
+      <th>Availability</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Wireless Headphones</td>
+      <td><img src="images/headphones.jpeg" alt="Wireless Headphones"></td>
+      <td>RS.2000</td>
+      <td>Noise-cancelling over-ear headphones with Bluetooth connectivity.</td>
+      <td class="in-stock">In Stock</td>
+    </tr>
+    <tr>
+      <td>Smartwatch</td>
+      <td><img src="images/smartwatch.jpeg" alt="Smartwatch"></td>
+      <td>RS.2000</td>
+      <td>Fitness tracking smartwatch with heart rate monitor and GPS.</td>
+      <td class="out-of-stock">Out of Stock</td>
+    </tr>
+    <tr>
+      <td>USB-C Hub</td>
+      <td><img src="images/hub.png" alt="USB-C Hub"></td>
+      <td>RS.2000</td>
+      <td>Multiport USB-C hub with HDMI, USB 3.0, and SD card reader.</td>
+      <td class="in-stock">In Stock</td>
+    </tr>
+    <tr>
+      <td>Bluetooth Speaker</td>
+      <td><img src="images/speaker.jpeg" alt="Bluetooth Speaker"></td>
+      <td>RS.2000</td>
+      <td>Portable waterproof speaker with 10-hour battery life.</td>
+      <td class="in-stock">In Stock</td>
+    </tr>
+  </tbody>
+</table>
+
+</body>
+</html>
