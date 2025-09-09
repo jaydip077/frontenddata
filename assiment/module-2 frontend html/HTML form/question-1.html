@@ -1,0 +1,65 @@
+<!-- 
+    What Are HTML Forms used for?
+    HTML forms are used to collect user input.
+     They can include various types of input fields such as
+      text boxes, checkboxes, radio buttons, and submit buttons. 
+      Forms are essential for gathering data from users, such as 
+      in contact forms, surveys, and login pages.
+
+      Describe the purpose of the input, textarea,select, and button elements.
+
+      <input type ="text">
+        Input is used for get input from the user, such as text, numbers, or passwords.
+    
+      <textarea> 
+        Textarea is used for get multi-line text input from the user.
+        such as address, comments, or descriptions.
+
+      <select>
+        select is used to create a dropdown list.
+        select allows user to select multiple options from a list.
+
+     <button>
+        Button is used to create a button in webpage.
+        with use of button user can submit the form or perform an action.
+
+      
+
+-->
+<!DOCTYPE html>
+<html lang="en">    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HTML Form Example</title>
+    </head>
+    <body>
+        <form align="center" style="margin-top: 50px;">
+            <label>Name</label>
+            <input type="text" name="name" placeholder="Name" required>
+            <br><br>
+
+            <label>Phone</label>
+            <input type="text" name="Phone" placeholder="Phone" required>
+             <br><br>
+
+            <label>Email</label>
+            <input type="EMail" name="EMail" placeholder="EMail" required>
+             <br><br>
+
+            <select name="country">
+                <option value="">Select Your country</option>
+                <option value="INDIAA">INDIA</option>
+                <option value="USA">USA</option>
+                <option value="Canada">Canada</option>
+                <option value="UK">UK</option>
+            </select>
+             <br><br>
+            <label>Address</label>
+            <textarea name="address" placeholder="address" ></textarea>
+             <br><br>
+            <input type="submit" value="Submit">
+
+        </form>
+    </body>
+</html>

@@ -1,0 +1,81 @@
+
+<!-- Create a contact form with the following fields:
+ Full name (text input)
+ Email (email input)
+ Phone number (tel input)
+ Subject (dropdown menu)
+ Message (textarea)
+ Submit butto -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>contact Us Form</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+        <div style="width: 60%; height: auto;margin: auto;padding: 25px;">
+            <h1>Contact Us Form</h1>
+            <form align="center" style="margin-top: 20px;">
+                <table>
+                    <tr>
+                        <th>
+                            <td>
+                            <label for="name">Name:</label>
+                            <input type="text" placeholder="Name" required>
+                            </td>
+                        </th>
+                    </tr>
+                   
+                    <tr>
+                        <th>
+                            <td>
+                            <label for="Email">Email:</label>
+                            <input type="email" placeholder="EMail" required >
+                            </td>
+                        </th>
+                    </tr>
+
+                     <tr>
+                        <th>
+                            <td>
+                            <label for="Phone">Phone:</label>
+                            <input type="tel" placeholder="Phone" required pattern="[0-9]{10}">
+                            </td>
+                        </th>
+                    </tr>
+                     <tr>
+                        <th>
+                            <td>
+                                <label for="Hobbies">Hobbies:</label>
+                               <input type="checkbox" name="Subject" value="HTML">HTML
+                               <input type="checkbox" name="Subject" value="PHP">PHP
+                               <input type="checkbox" name="Subject" value="c#">C#
+                              
+                            </td>
+                        </th>
+                        
+                    </tr>
+                     <tr>
+                        <th>
+                            <td>
+                                Message<textarea name="message" placeholder="Message" ></textarea>
+                            </td>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <td>
+                               <input type="submit" value="Submit">
+                            </td>
+                        </th>
+                    </tr>
+                </table>
+            </form>
+            
+        </div>
+</body>
+</html>

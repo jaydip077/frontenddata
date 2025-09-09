@@ -1,0 +1,25 @@
+@font-face{
+    font-family:jaydip;
+    src:url('../font/priestacy.regular.otf');
+}
+
+body{
+ background:url(../image/bg.webp) no-repeat;
+ background-size: cover;
+background-attachment: fixed;
+background-position: center;
+
+}
+div p {
+    width: 80%;
+    height: auto;
+    margin: auto;
+    color:darkgreen;
+    font-family: jaydip;
+    font-size: 25px;
+}
+div h1{
+    text-align: center;
+    color: darkred;
+    font-size: 40px;
+}

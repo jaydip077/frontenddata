@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<title>Page Title</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+<script src='main.js'></script>
+</head>
+<body>
+<div style="width: 60%; height: auto; margin: auto; padding: 25px;">
+<h1>just play videos to see a React js (How to store data via API)</h1>
+<hr  />
+<p align="justify">
+<video controls width="400" height="300" style="float: left; padding: 15px;" poster="images/react.jpg">
+    <source src="video/limitless.mkv" type="video/mp4" />
+    <audio controls>
+        <source src="video/limitless.mkv" type="audio/ogg">
+    </audio>
+</video>    
+To store data in a React.js application retrieved from an API, the following general steps are involved:
+
+Fetching Data:
+Utilize a library like axios or the built-in fetch API to make an HTTP request to your API endpoint.
+The request type (GET, POST, PUT, DELETE) depends on the operation you are performing (retrieving, creating, updating, or deleting data). 
+Handling the Response:
+Upon receiving a successful response from the API, the data needs to be extracted from the response object.
+If the API returns JSON, parse the response into a JavaScript object using response.json() (for fetch) or accessing response.data (for axios). 
+Storing Data in Component State:
+Use React's useState hook to manage the data within your component.
+Call the setState function provided by useState to update the component's state with the fetched data. This will trigger a re-render of the component, displaying the new data. 
+Displaying Data (Optional):
+Once the data is in the component's state, you can render it within your component's JSX. This typically involves mapping over arrays of data to create lists or displaying individual data points.</p>
+
+
+</div>
+</body>
+</html>
