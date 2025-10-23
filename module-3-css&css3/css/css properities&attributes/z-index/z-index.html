@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<title>Page Title</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+<script src='main.js'></script>
+<style>
+body 
+{
+margin: 0px;
+padding: 0px;
+overflow-x: hidden;    
+background-image: url('https://static.vecteezy.com/system/resources/previews/008/311/935/non_2x/the-illustration-graphic-consists-of-abstract-background-with-a-blue-gradient-dynamic-shapes-composition-eps10-perfect-for-presentation-background-website-landing-page-wallpaper-vector.jpg');
+background-size: cover;
+background-position: center;
+background-attachment: fixed;    
+}
+
+.navbar
+{
+width: 100%;
+height: auto;
+padding: 5px;
+background-color: white; 
+top: 0;
+position: sticky;   
+z-index: 1;
+}
+.navbar ul li 
+{
+/* display: inline;   */
+display: inline-block;
+padding: 5px 25px;
+text-decoration: none;
+list-style-type: none;
+}
+.navbar a 
+{
+text-decoration: none;
+list-style-type: none;
+color: black;
+font-size: 20px;
+text-transform: capitalize;
+}
+.navbar a:hover 
+{
+color: red;
+text-decoration: underline;  
+}
+.active 
+{
+background-color: red;
+padding: 26px 15px;  
+}
+
+.content 
+{
+width: 40%;
+height: auto;
+margin: auto;
+margin-top: 8%;
+position: relative;    
+}
+.box1
+{
+width: 80%;
+height: 300px;
+background-color: red;
+font-size: 40px;
+color: white;
+position: absolute;    
+margin-top: 0%;
+margin-left: 0%;
+z-index: 10;
+}
+.box2
+{
+width: 80%;
+height: 300px;
+background-color: palevioletred;
+font-size: 40px;
+color: white;    
+position: absolute;
+margin-top: 8%;
+margin-left: 8%;
+z-index: 8;    
+}
+.box3
+{
+width: 80%;
+height: 300px;
+background-color: green;
+font-size: 40px;
+color: white;    
+position: absolute;
+margin-top: 18%;
+margin-left: 18%;    
+z-index: 5;
+}
+.box4
+{
+width: 80%;
+height: 300px;
+background-color: blue;
+font-size: 40px;
+color: white;    
+position: absolute;    
+margin-top:25%;
+margin-left: 25%;
+z-index: 8;
+}
+</style>
+</head>
+<body>
+
+<!-- navbar -->
+
+<nav class="navbar">
+<ul>
+<li><a href="" class='active'>Home</a></li>
+<li><a href="">Services</a></li>
+<li><a href="">gallery</a></li>
+<li><a href="">contact</a></li>
+<li><a href="">account</a></li>
+</ul>
+</nav>
+
+<!-- content -->
+<div class="content">
+
+    <div class="box1">box1</div>
+    <div class="box2">box2</div>
+    <div class="box3">box3</div>
+    <div class="box4">box4</div>
+
+</div>
+
+</body>
+</html>

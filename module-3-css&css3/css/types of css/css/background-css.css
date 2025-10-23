@@ -1,0 +1,51 @@
+@font-face {
+    font-family: jaydip1;
+    src: url('../font/gunplay\ 3d.otf');
+}
+body{
+    background:url(../image/bg2.jpg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+div  {
+width: 350px;
+height: 350px;
+margin: auto;
+margin-top: 3%;
+padding: 40px;
+background-color: white;
+font-family: cursive;
+
+}
+div h1{
+    text-align: center;
+    color: darkblue;
+    font-size: 40px;
+    font-family: jaydip1;
+}
+div:hover 
+{
+width: 350px;
+height: 350px;
+margin: auto;
+margin-top: 3%;
+padding: 70px;
+background-color: black;
+color: white;
+border-radius: 50%;
+transition: 2s ease all;
+}
+div h1 
+{
+ font-family: jaydip1;
+ font-size: 45px;
+ color: blue;   
+}
+div span
+{
+    font-size: 30px;
+    color: darkred;
+    font-family: jaydip1;
+    float: right;
+}

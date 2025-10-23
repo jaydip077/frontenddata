@@ -1,0 +1,231 @@
+
+/* fluid layout : fluid layout provides default responsive content
+                  fluid layout provides width :% 
+                                        height:px
+                                        height:em 
+                                        height:vh 
+                                            
+
+*/
+:root 
+{
+ --bg-success:green;
+ --bg-danger:red;
+ --bg-warning:yellow;
+ --bg-lightgray:rgb(255, 250, 250);
+ --bg-dark:black;
+ --bg-white:white;
+ --bg-primary:#135f90;
+ --txt-success:green;
+ --txt-danger:red;
+ --txt-warning:yellow;
+ --txt-lightgray:rgb(255, 250, 250);
+ --txt-dark:black;
+ --txt-white:white;
+ --txt-primary:#135f90;
+    
+}
+* 
+{
+margin: 0px;
+padding: 0px;
+font-family: cursive;    
+}
+body 
+{
+margin: 0px;
+padding: 0px;
+overflow-x: hidden;
+box-sizing: border-box;
+background-color:var(--bg-lightgray);
+}
+html h1,h2,h3,h4,h5,h6 
+{
+margin: 0px;
+padding: 0px;    
+}
+html ul li 
+{
+margin: 0px;
+padding: 0px;    
+}
+/* header */
+#header
+{
+width: 100%;
+height: auto;
+display: flex;
+flex-direction: row;    
+background-color:var(--bg-white);
+border-bottom: solid gray 1px;
+top: 0px;
+position: sticky;
+z-index: 10;
+}
+.logo
+{
+width: 25%;
+height: auto;
+padding: 15px;
+font-size: 20px;
+}
+.search-box
+{
+
+width: 55%;
+height: auto;
+padding: 15px;
+}
+.search-box input
+{
+width: 100%;
+height: auto;
+padding: 10px;    
+}
+.social-media
+{
+
+width: 20%;
+height: auto;
+padding: 15px;
+font-size: 25px;
+letter-spacing: 2px;
+}
+/* navbar */
+#navbar
+{
+width: 100%;
+height: auto;
+background-color: var(--bg-dark);    
+}
+.navbar-link
+{
+margin-left: 15%;    
+}
+.navbar-link li
+{    
+display: inline-block !important;    
+padding: 18px 25px;
+} 
+.navbar-link a 
+{
+color: white;
+text-decoration: none;
+list-style-type: none;    
+}
+/* slider */
+#slider 
+{
+width: 100%;
+height: 380px;
+background: linear-gradient(rgba(10,0,0,0.9),rgba(10,0,0,0.8)),url('https://wp101.com/wp-content/uploads/2023/10/best-wordpress-slider-plugins.png') no-repeat center;    
+background-size: cover;
+background-position: center;
+position: relative;
+}
+.slider-txt
+{
+margin-top: 70px; 
+position: absolute;   
+}
+.slider-txt
+{
+ width: 70%;
+ margin-left: 15%;   
+ text-align: center;
+ color: white;
+}
+.slider-txt button 
+{
+    
+ width: 30%;   
+ text-align: center;
+ color: white;
+ margin-top: 10px;
+ background-color: brown;
+ border: 0;
+ padding: 20px;
+}
+#content
+{
+width:100%;
+height: auto;
+display: flex;
+flex-wrap: wrap;
+
+}
+.leftsidebar
+{
+width: 20%;
+height: auto;
+padding: 10px;
+background-color: lightgray;
+}
+.sidebar-link li
+{
+display: block;
+font-size: 20px;
+padding: 10px;
+}
+.sidebar-link a 
+{
+ color: black;
+ text-decoration: none;   
+}
+.rightsidebar
+{
+width:35%;
+height: auto;
+padding: 25px;
+text-align: left !important;
+color: black !important;
+
+}
+.rightsidebar p 
+{
+text-align: left !important;
+color: black !important;    
+}
+
+.google-map
+{
+width: 35%;
+height: auto;
+padding: 25px;
+}
+.google-map iframe 
+{
+width: 500px;
+height: 250px;    
+}
+#footer
+{
+width: 100%;
+height: auto;
+padding: 20px;
+background-color: black;
+color: white;    
+display: flex;
+flex-wrap: wrap;
+}
+.pagelinks,
+.address,
+.newsletter
+{
+width: 30%;
+height: auto;
+padding: 10px;    
+}
+.footer-link li 
+{
+ display: block;
+ padding: 8px 3px;
+ text-decoration: none;
+ list-style-type: none;   
+}
+.footer-link a 
+{
+  text-decoration: none;
+ list-style-type: none;  
+ color: white;   
+}

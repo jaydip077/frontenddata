@@ -1,0 +1,229 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Matrimonial / Marriage Bureau Biodata</title>
+  <style>
+    :root{
+      --accent:#1f6feb;
+      --muted:#6b7280;
+      --bg:#f7f8fb;
+      --card:#ffffff;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:#111827}
+    .container{max-width:900px;margin:28px auto;padding:20px}
+    .card{background:var(--card);border-radius:12px;box-shadow:0 6px 18px rgba(15,23,42,0.08);overflow:hidden}
+
+    header{display:flex;gap:20px;padding:20px;align-items:center}
+    .photo{width:140px;height:140px;border-radius:10px;overflow:hidden;flex:0 0 140px;background:linear-gradient(135deg,#eef2ff,#fff)}
+    .photo img{width:100%;height:100%;object-fit:cover;display:block}
+    .meta{flex:1}
+    .name{font-size:1.45rem;font-weight:700;margin:0}
+    .subtitle{color:var(--muted);margin-top:4px}
+
+    .actions{display:flex;gap:8px}
+    .btn{border:0;padding:8px 12px;border-radius:8px;background:var(--accent);color:white;cursor:pointer;font-weight:600}
+    .btn.secondary{background:transparent;border:1px solid #e6edf8;color:var(--accent)}
+
+    .content{display:grid;grid-template-columns:1fr 320px;gap:18px;padding:20px}
+    .section{background:linear-gradient(180deg,rgba(255,255,255,0.9),transparent);padding:16px;border-radius:10px}
+    h2{font-size:1rem;margin:0 0 10px 0}
+    dl{display:grid;grid-template-columns:140px 1fr;gap:8px 16px;margin:0}
+    dt{color:var(--muted);font-weight:600}
+    dd{margin:0}
+
+    /* sidebar */
+    aside .section{position:sticky;top:20px}
+    .family-list, .education-list{margin:0;padding:0;list-style:none}
+    .family-list li{padding:6px 0;border-bottom:1px dashed #eef2ff}
+
+    /* partner expectations box */
+    .expect{background:#fbfdff;border:1px solid #ecf3ff;padding:12px;border-radius:8px}
+
+    /* print styles */
+    @media print{
+      body{background:white}
+      .container{max-width:760px;margin:0}
+      .actions{display:none}
+      .content{grid-template-columns:1fr 280px}
+      .card{box-shadow:none}
+    }
+
+    /* small screens */
+    @media(max-width:800px){
+      .content{grid-template-columns:1fr}
+      .photo{width:110px;height:110px}
+    }
+
+    /* editable form styles */
+    .form-row{display:flex;gap:8px;margin-bottom:10px}
+    .form-row input, .form-row select, .form-row textarea{flex:1;padding:8px;border-radius:8px;border:1px solid #e6eefb}
+    .muted{color:var(--muted);font-size:0.9rem}
+
+    footer{padding:14px 20px;border-top:1px dashed #eef2ff;color:var(--muted);font-size:0.95rem}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card" id="biodata-card">
+      <header>
+        <div class="photo" id="photoPreview">
+          <img src="https://via.placeholder.com/300x300?text=Photo" alt="Profile Photo" id="profilePhoto"/>
+        </div>
+        <div class="meta">
+          <h1 class="name" id="fullName">First Last</h1>
+          <div class="subtitle" id="shortSummary">28 yrs, Master's, Software Engineer — Mumbai</div>
+          <div style="margin-top:8px;display:flex;gap:8px;align-items:center">
+            <div class="muted">Religion: <strong id="religion">Hindu</strong></div>
+            <div style="width:8px"></div>
+            <div class="muted">Caste: <strong id="caste">Brahmin</strong></div>
+          </div>
+        </div>
+        <div class="actions">
+          <button class="btn" onclick="window.print()">Print / Save PDF</button>
+          <label class="btn secondary" style="display:inline-flex;align-items:center;gap:8px;cursor:pointer">
+            <input type="file" accept="image/*" id="photoInput" style="display:none" />Upload Photo
+          </label>
+        </div>
+      </header>
+
+      <div class="content">
+        <main>
+          <section class="section">
+            <h2>Personal Details</h2>
+            <dl>
+              <dt>Full Name</dt><dd id="pd-name">First Last</dd>
+              <dt>Date of Birth</dt><dd id="pd-dob">Jan 01, 1997 (28 yrs)</dd>
+              <dt>Height</dt><dd id="pd-height">5'7" (170 cm)</dd>
+              <dt>Weight</dt><dd id="pd-weight">70 kg</dd>
+              <dt>Blood Group</dt><dd id="pd-blood">O+</dd>
+              <dt>Language</dt><dd id="pd-lang">Hindi, English</dd>
+              <dt>Marital Status</dt><dd id="pd-marital">Never Married</dd>
+              <dt>Address</dt><dd id="pd-address">Mumbai, Maharashtra, India</dd>
+            </dl>
+          </section>
+
+          <section class="section" style="margin-top:12px">
+            <h2>Education & Profession</h2>
+            <dl>
+              <dt>Highest Education</dt><dd id="edu-high">M.Tech in Computer Science</dd>
+              <dt>College / University</dt><dd id="edu-school">ABC Institute of Technology</dd>
+              <dt>Occupation</dt><dd id="occ">Senior Software Engineer</dd>
+              <dt>Company / Employer</dt><dd id="company">XYZ Solutions Pvt. Ltd.</dd>
+              <dt>Annual Income</dt><dd id="income">₹12,00,000</dd>
+            </dl>
+          </section>
+
+          <section class="section" style="margin-top:12px">
+            <h2>Family Details</h2>
+            <p class="muted">Immediate family (living with):</p>
+            <ul class="family-list" id="familyList">
+              <li>Father — Retired Bank Manager</li>
+              <li>Mother — Homemaker</li>
+              <li>One Younger Sister — Student</li>
+            </ul>
+            <p style="margin-top:10px" class="muted">Family values: <strong id="familyValues">Traditional</strong></p>
+            <p class="muted">Contact through family: <strong id="familyContact">+91-XXXXXXXXXX</strong></p>
+          </section>
+
+          <section class="section" style="margin-top:12px">
+            <h2>Partner Preferences</h2>
+            <div class="expect" id="partnerPref">
+              <p>Looking for a well-educated, family-oriented partner — Age 24-28, similar cultural background, open to relocation.</p>
+              <p class="muted">Preferred location: Mumbai / Pune / Bangalore</p>
+            </div>
+          </section>
+
+          <section class="section" style="margin-top:12px">
+            <h2>Other Details</h2>
+            <dl>
+              <dt>Hobbies</dt><dd id="hobbies">Reading, Travelling, Cricket</dd>
+              <dt>Diet</dt><dd id="diet">Vegetarian</dd>
+              <dt>Smoke / Drink</dt><dd id="habits">No / No</dd>
+              <dt>Languages Known</dt><dd id="langs">Hindi, English, Marathi</dd>
+            </dl>
+          </section>
+
+          <section class="section" style="margin-top:12px">
+            <h2>Declaration</h2>
+            <p class="muted">I hereby declare that the information given above is true to the best of my knowledge.</p>
+            <p style="margin-top:10px">Place: <strong id="decl-place">Mumbai</strong> &nbsp;&nbsp; Date: <strong id="decl-date">01-Jan-2025</strong></p>
+          </section>
+        </main>
+
+        <aside>
+          <div class="section">
+            <h2>Quick Facts</h2>
+            <dl>
+              <dt>Religion / Caste</dt><dd id="qf-religion">Hindu / Brahmin</dd>
+              <dt>Mother Tongue</dt><dd id="qf-mt">Hindi</dd>
+              <dt>Seeking</dt><dd id="qf-seeking">Married Life — Traditional</dd>
+            </dl>
+          </div>
+
+          <div class="section" style="margin-top:12px">
+            <h2>Contact</h2>
+            <p class="muted">Primary:</p>
+            <p><strong id="contact-number">+91-XXXXXXXXXX</strong></p>
+            <p class="muted">Email:</p>
+            <p><strong id="contact-email">example@email.com</strong></p>
+          </div>
+
+          <div class="section" style="margin-top:12px">
+            <h2>Education Timeline</h2>
+            <ol class="education-list">
+              <li>B.Sc. (2016) — XYZ College</li>
+              <li>M.Tech (2019) — ABC Institute</li>
+            </ol>
+          </div>
+        </aside>
+      </div>
+
+      <footer>
+        This biodata was generated using a template — update details by clicking "Edit details".
+      </footer>
+    </div>
+
+    <!-- Editable form to update biodata (keeps everything in-page) -->
+    <div style="margin-top:14px" class="card">
+      <div style="padding:16px">
+        <h2 style="margin-top:0">Edit details (live preview)</h2>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+
+          <div>
+            <div class="form-row"><input placeholder="Full name" id="input_name" /></div>
+            <div class="form-row"><input placeholder="Short summary (age, city)" id="input_summary" /></div>
+            <div class="form-row"><input placeholder="Religion" id="input_religion" /></div>
+            <div class="form-row"><input placeholder="Caste" id="input_caste" /></div>
+            <div class="form-row"><input placeholder="Date of Birth" id="input_dob" /></div>
+            <div class="form-row"><input placeholder="Height" id="input_height" /></div>
+            <div class="form-row"><input placeholder="Highest Education" id="input_edu" /></div>
+            <div class="form-row"><input placeholder="Occupation" id="input_occ" /></div>
+            <div class="form-row"><input placeholder="Company" id="input_company" /></div>
+            <div class="form-row"><input placeholder="Annual Income" id="input_income" /></div>
+          </div>
+
+          <div>
+            <div class="form-row"><textarea placeholder="Address" id="input_address"></textarea></div>
+            <div class="form-row"><input placeholder="Family summary" id="input_family" /></div>
+            <div class="form-row"><input placeholder="Family values" id="input_familyValues" /></div>
+            <div class="form-row"><input placeholder="Partner preferences" id="input_partner" /></div>
+            <div class="form-row"><input placeholder="Hobbies" id="input_hobbies" /></div>
+            <div class="form-row"><input placeholder="Diet" id="input_diet" /></div>
+            <div class="form-row"><input placeholder="Contact number" id="input_contact" /></div>
+            <div class="form-row"><input placeholder="Email" id="input_email" /></div>
+            <div style="display:flex;gap:8px"><button class="btn" id="saveBtn">Update preview</button><button class="btn secondary" id="resetBtn">Reset</button></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+ 
+</body>
+</html>

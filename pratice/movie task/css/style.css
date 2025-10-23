@@ -1,0 +1,153 @@
+:root
+{
+--bg-color:#f9fafb;    
+--bg-primary:#101828;
+--bg-white:white;
+--bg-blue:#1447e6; 
+--bg-red:#c10007;
+--bg-valet:#8200db;
+--bg-green:#42a26a;
+
+--txt-primary:#101828;
+--txt-white:white;
+--txt-blue:#1447e6; 
+--txt-red:#c10007;
+--txt-valet:#8200db;
+--txt-green:#42a26a;
+}
+*
+{
+margin: 0;
+padding: 0;
+font-family: 'Times New Roman', Times, serif;
+} 
+body 
+{
+margin: 0;
+padding: 0;
+background-attachment: fixed !important;
+overflow-x: hidden;
+box-sizing: border-box;
+background-color: var(--bg-color);
+
+}
+#admin-main
+{
+width: 100%;
+height: auto;
+display: flex;
+flex-wrap: wrap;
+position: fixed;
+clear: both !important;
+}
+.admin-sidebar
+{
+width: 15%;
+height: auto;
+background-color: var(--bg-primary);
+padding: 15px;
+
+}
+.sidebar-navlink li 
+{
+display:block;
+padding: 18px 10px;
+text-decoration: none;
+list-style-type: none;    
+}
+.sidebar-navlink a 
+{
+
+text-decoration: none;
+list-style-type: none;
+color: white;
+text-transform: capitalize;
+font-size: 19px;    
+text-align: left !important;
+}
+.active
+{
+background-color: var(--bg-red);
+border-radius: 5px;
+text-align: left !important;    
+}
+.admin-content
+{
+width: 75%;
+height: 600px !important;
+background-color: var(--bg-color);
+padding: 52px;
+overflow: auto !important;
+}
+.admin-content h1 
+{
+ font-size: 35px;
+ margin-top: 8%;   
+}
+.dashboard-overview
+{
+width: 100%;
+height: auto;
+display: flex;
+flex-wrap: wrap;  
+
+}
+.admin-card
+{
+width: 30%;
+height: auto;
+margin: 5px;
+padding: 10px;
+background-color: var(--bg-white);
+box-shadow: 1px 1px 1px 1px lightgray;    
+}
+.admin-card h1 
+{
+text-align: center;
+font-size: 25px;
+color: black;    
+}
+.admin-card h2 
+{
+text-align: center;
+font-size: 35px;
+color: var(--txt-blue);    
+}
+
+.admin-card h2 span 
+{
+text-align: center;
+font-size: 35px;
+color: var(--txt-green) !important;    
+}
+.admin-card .total-users
+{
+text-align: center;
+font-size: 35px;
+color: var(--txt-valet) !important;        
+}
+.admin-card-wide
+{
+width: 92%;
+height: auto;
+margin: 5px;
+padding: 45px 30px;
+background-color: var(--bg-white);
+box-shadow: 1px 1px 1px 1px lightgray;    
+margin-top: 2%;
+}
+.admin-card-wide ul li  
+{
+ padding: 8px 5px;
+}
+#admin-footer
+{
+width: 100%;
+height: auto;
+background-color: var(--bg-primary) !important;    
+padding: 15px;
+color: white;
+text-align: center;
+bottom: 0 !important;
+position: fixed;
+}

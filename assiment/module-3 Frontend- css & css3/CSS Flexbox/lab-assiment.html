@@ -1,0 +1,134 @@
+<!-- Create a simple webpage layout using Flexbox. The layout should include: 
+ A header. 
+ A sidebar on the left. 
+ A main content area in the center. 
+ A footer. 
+Additional Requirements: 
+ Use Flexbox to position and align the elements. 
+ Apply different justify-content and align-items properties to observe their effects. 
+ Ensure the layout is responsive, adjusting for smaller screens -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>FlexBox</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <section class="header">
+        <div class="navbar">
+            <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">project</a></li>
+                    <li><input type="text" placeholder="Search Here"></li>
+                </ul>
+        </div>
+    </section>
+
+    <section id="sidebar">
+            <div class="side">
+                <ul>
+                    <li><a href="#">About US</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">E-Mail</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Address</a></li>
+                </ul>
+            </div>
+
+              <div class="main">
+                <h3>question 1</h3>
+                <p>What is CSS Flexbox.  <br>
+
+                    CSS Flexbox (Flexible Box Layout) is a layout model in CSS that allows you to design complex layouts easily and efficiently. It helps you align and distribute space among items in a container — even when their size is unknown or dynamic.-->
+
+                    <hr>
+                     how is it useful for layout design? <br>
+                    
+                    It makes responsive and adpative:<br>
+                    Itmes can grow shrink and wrap based on available space.
+
+                    Simplifies aligment:<br>
+                    Flexbox provides powerful alignment options for both horizontal and vertical alignment of items within a container.
+
+                    Control over spacing:<br>
+                    gap,justify and margin properties allow for precise control over spacing between items.
+
+                    creates equal-height rows and flexible column without floats or complex calculations.
+
+                    allows for reordering of items without changing the HTML structure.<br>
+                    <hr>
+
+                    Explain the terms flex-container and flex-item.<br>
+
+                    Flex-container:<br>
+
+                    The element that has display: flex (or inline-flex).<br>
+
+                    Establishes a flex formatting context and controls layout of its direct children.<br>
+
+                    Container-level properties: flex-direction, flex-wrap, justify-content, align-items, gap, align-content.<br>
+
+                    Flex-item:<br>
+
+                    Any direct child of a flex-container.<br>
+
+                    Its size and position are controlled by item-level properties: flex (grow/shrink/basis), order, align-self, margin.<br>
+
+                    Flex items participate in the container’s distribution of space and alignment.<br>
+                    </p>
+                    <hr>
+                    <h3>question 2</h3>
+                    <p>
+                        Describe the properties justify-content, align-items, and flex- 
+                        direction used in Flexbox.<br>
+                        <hr>
+                        justify-content:<br>
+                        justify content provides alignment along the main axis of the flex container.<br>
+                        <hr>
+                        values of justify-content:<br>
+                        flex-start:set items at the start of the container.<br>
+                        flex-end: set items at the end of the container.<br>
+                        center: center items in the container.<br>
+                        space-between: distribute items evenly with first item at start and last item at end.<br>
+                        space-around: distribute items evenly with equal space around them.<br>
+                        space-evenly: distribute items with equal space between and around them.<br>
+                        <hr>
+                        align-items:<br>
+                        align-items provides alignment along the cross axixs of the flex container.<br>
+                        <hr>
+                        values of align-items:<br>
+                        flex-start: align items at the start of the cross axis.<br>
+                        flex-end: align items at the end of the cross axis.<br>
+                        center: center items along the cross axis.<br>
+                        stretch: stretch items to fill the container along the cross axis.<br>
+                        baseline: align items along their text baselines.<br>
+                        <hr>
+                        flex-direction:<br>
+                        flex-direction defines the direction of the main axis and the direction in which flex items are placed in the flex container.<br>
+                        values of flex-direction:<br>
+                        row: items are placed in a row from left to right.<br>
+                        row-reverse: items are placed in a row from right to left.<br>
+                        column: items are placed in a column from top to bottom.<br>
+                        column-reverse: items are placed in a column from bottom to top.<br>
+
+                    </p>
+
+                        
+            </div>
+    
+          
+    </section>
+
+    <section id="footer">
+        <div>
+                <p>Created By Jaydip Ahir</p>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Admin Panel</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      height: 100vh;
+      overflow: hidden; /* prevent body scroll */
+    }
+
+    /* Sidebar */
+    .sidebar {
+      width: 220px;
+      background: #1e1e1e;
+      color: white;
+      padding: 20px 10px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+    }
+
+    .sidebar h2 {
+      margin-bottom: 20px;
+    }
+
+    .sidebar ul {
+      list-style: none;
+    }
+
+    .sidebar ul li {
+      padding: 12px;
+      cursor: pointer;
+    }
+
+    .sidebar ul li:hover {
+      background: #333;
+    }
+
+    .logout {
+      margin-top: 20px;
+      background: red;
+      padding: 10px;
+      text-align: center;
+      border-radius: 5px;
+    }
+
+    /* Main Content */
+    .main-content {
+      margin-left: 220px; /* same as sidebar width */
+      padding: 20px;
+      height: 100vh;
+      overflow-y: auto; /* scroll only here */
+      background: #f4f4f9;
+      width: calc(100% - 220px);
+    }
+
+    .card-container {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 20px;
+    }
+
+    .card {
+      flex: 1;
+      background: white;
+      padding: 20px;
+      text-align: center;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .recent-activity {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .footer {
+      margin-top: 40px;
+      text-align: center;
+      font-size: 14px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h2>Dashboard</h2>
+    <ul>
+      <li>Manage User</li>
+      <li>Movie Category</li>
+      <li>Movies</li>
+      <li>Manage Review</li>
+      <li>Manage Content</li>
+      <li>Setting</li>
+    </ul>
+    <div class="logout">LogOut</div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <h1>Dashboard Overview</h1>
+
+    <div class="card-container">
+      <div class="card">
+        <h3>Total Movies</h3>
+        <p style="color:blue; font-size:22px;">120</p>
+      </div>
+      <div class="card">
+        <h3>Total User</h3>
+        <p style="color:purple; font-size:22px;">45</p>
+      </div>
+      <div class="card">
+        <h3>Active Sessions</h3>
+        <p style="color:green; font-size:22px;">8</p>
+      </div>
+    </div>
+
+    <div class="recent-activity">
+      <h3>Recent activity</h3>
+      <ul>
+        <li>Movie "Inception" added by Admin</li>
+        <li>User "john_doe" registered</li>
+        <li>Settings updated</li>
+      </ul>
+    </div>
+
+    <div class="footer">
+      © 2025 Movies Admin Panel. All rights reserved.
+    </div>
+
+    <!-- Extra content to show scroll -->
+    <div style="height:600px;"></div>
+  </div>
+
+</body>
+</html>

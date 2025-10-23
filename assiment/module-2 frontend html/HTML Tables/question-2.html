@@ -1,0 +1,43 @@
+<!-- 
+    : What is the difference between colspan and rowspan.
+    colspan:
+    colspan is an attribute of <td> & th> tag.
+    colspan is used to make a cell span across multiple columns.
+
+    rowspan:
+    rowspan is an attribute of <td> & th> tag.
+    rowspan is used to make a cell span across multiple rows.
+    This explanation has been added as a comment in your file.
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <div style="width: 50%;height: auto;">
+        <table border="1">
+            <tr>
+                <th>Name</th>
+                <th colspan="2">Contact</th>
+            </tr>
+            <tr>
+                <td rowspan="2">Alice</td>
+                <td>Email</td>
+                <td>alice@example.com</td>
+            </tr>
+            <tr>
+                <td>Phone</td>
+                <td>123-456-7890</td>
+            </tr>
+        </table>
+    </div>
+    
+</body>
+</html>

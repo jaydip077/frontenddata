@@ -1,0 +1,723 @@
+
+/* mobile */
+@media only screen and (max-width:580px)
+{
+body 
+{
+margin: 0 !important;
+padding: 0 !important;   
+overflow-x: hidden !important;
+background-color: white !important;
+}
+
+#header
+{
+width: 100%;
+height: auto;
+display: flex;
+flex-wrap: wrap;    
+background-color: white;
+top: 0;
+position: sticky;
+z-index: 5;
+}
+.logo
+{
+width: 15% !important;
+height: auto;
+padding: 10px;    
+}
+.logo b 
+{
+font-size: 25px !important;
+letter-spacing: 1px;
+margin-left: 5%;    
+}
+.search
+{
+width: 50% !important;
+height: auto;
+padding: 10px;    
+}
+.search input 
+{
+width: 90% !important;
+height: auto;
+padding: 10px !important;    
+}
+.account
+{
+width: 22% !important;
+height: auto;
+padding: 10px !important;    
+}
+.account button 
+{
+ width: 100% !important;
+ height: auto;
+ padding: 2px;
+ margin-left: 0% !important;   
+ background-color: #3a81de;
+ border: none;
+ color: white;
+ font-size: 12px !important;
+}
+
+
+#navbar
+{
+width: 100%;
+height: auto;
+background-color: #3a81de;    
+}
+#navbar ul
+{
+margin-top: 0 !important;    
+}
+#navbar ul li 
+{
+ display: inline-block;
+ padding: 5px 8px !important;   
+}
+#navbar a 
+{
+ text-decoration: none;
+ list-style-type: none;
+ color: white;
+ text-transform: capitalize !important;   
+}
+#slider
+{
+width: 100% !important;
+height: 220px !important;
+margin: 0px;
+padding: 0px;
+margin-top: -2% !important;
+background: linear-gradient(rgba(100, 99, 99, 0.8),rgba(10, 9, 9, 0.8)),url('../images/blinkit.jpg');
+background-size: cover;
+background-position: center;    
+position: relative;
+}
+.slider-txt
+{
+width: 60%;
+height: auto;
+margin: auto;
+position: absolute;
+margin-left: 20%;
+text-align: center;    
+margin-top: 0% !important;
+color: white;
+}
+#content
+{
+ width: 100%;
+ height: auto;
+ margin: auto;
+ margin-top: 5%;
+ display: flex;
+ flex-wrap: wrap;   
+}
+.leftsidebar
+{
+width: 32% !important;
+height: auto;    
+background-color: #3a81de;
+}
+.leftsidebar ul li 
+{
+ display: block;
+ padding: 15px 2px !important;
+
+}
+.leftsidebar a 
+{
+ text-decoration: none;
+ list-style-type: none;
+ text-transform: capitalize;
+ color: white;
+ font-size: 18px !important;   
+}
+
+.rightsidebar
+{
+width: 60% !important;
+height: auto;    
+background-color: white;
+float: left;
+padding: 10px !important;
+}
+.products-items
+{
+width: 35% !important;
+height: auto;
+padding: 10px !important;
+box-shadow: 2px 2px 1px 1px lightgray; 
+margin: 0px;
+float: left;   
+}
+.products-items img 
+{
+ width: 100%;
+ height: auto;   
+}
+#footer
+{
+width: 100%;
+height: auto;
+background-color: #270f30 !important;
+margin-top: 5%;    
+display: block !important;
+}
+.page-link,
+.address,
+.newsletter
+{
+width: 50% !important;
+height: auto;
+margin: 2px;
+padding: 5px;    
+}
+}
+/* tablet */
+@media only screen and (max-width:767px)
+{
+    body 
+{
+margin: 0 !important;
+padding: 0 !important;   
+overflow-x: hidden !important;
+background-color: white !important;
+}
+
+#header
+{
+width: 100%;
+height: auto;
+display: flex;
+flex-wrap: wrap;    
+background-color: white;
+top: 0;
+position: sticky;
+z-index: 5;
+}
+.logo
+{
+width: 15% !important;
+height: auto;
+padding: 10px;    
+}
+.logo b 
+{
+font-size: 25px !important;
+letter-spacing: 1px;
+margin-left: 5%;    
+}
+.search
+{
+width: 50% !important;
+height: auto;
+padding: 10px;    
+}
+.search input 
+{
+width: 90% !important;
+height: auto;
+padding: 10px !important;    
+}
+.account
+{
+width: 22% !important;
+height: auto;
+padding: 10px !important;    
+}
+.account button 
+{
+ width: 100% !important;
+ height: auto;
+ padding: 2px;
+ margin-left: 0% !important;   
+ background-color: #3a81de;
+ border: none;
+ color: white;
+ font-size: 12px !important;
+}
+
+
+#navbar
+{
+width: 100%;
+height: auto;
+background-color: #3a81de;    
+}
+#navbar ul
+{
+margin-top: 0 !important;    
+}
+#navbar ul li 
+{
+ display: inline-block;
+ padding: 5px 8px !important;   
+}
+#navbar a 
+{
+ text-decoration: none;
+ list-style-type: none;
+ color: white;
+ text-transform: capitalize !important;   
+}
+#slider
+{
+width: 100% !important;
+height: 220px !important;
+margin: 0px;
+padding: 0px;
+margin-top: -2% !important;
+background: linear-gradient(rgba(100, 99, 99, 0.8),rgba(10, 9, 9, 0.8)),url('../images/blinkit.jpg');
+background-size: cover;
+background-position: center;    
+position: relative;
+}
+.slider-txt
+{
+width: 60%;
+height: auto;
+margin: auto;
+position: absolute;
+margin-left: 20%;
+text-align: center;    
+margin-top: 0% !important;
+color: white;
+}
+#content
+{
+ width: 100%;
+ height: auto;
+ margin: auto;
+ margin-top: 5%;
+ display: flex;
+ flex-wrap: wrap;   
+}
+.leftsidebar
+{
+width: 32% !important;
+height: auto;    
+background-color: #3a81de;
+}
+.leftsidebar ul li 
+{
+ display: block;
+ padding: 15px 2px !important;
+
+}
+.leftsidebar a 
+{
+ text-decoration: none;
+ list-style-type: none;
+ text-transform: capitalize;
+ color: white;
+ font-size: 18px !important;   
+}
+
+.rightsidebar
+{
+width: 60% !important;
+height: auto;    
+background-color: white;
+float: left;
+padding: 10px !important;
+}
+.products-items
+{
+width: 35% !important;
+height: auto;
+padding: 10px !important;
+box-shadow: 2px 2px 1px 1px lightgray; 
+margin: 0px;
+float: left;   
+}
+.products-items img 
+{
+ width: 100%;
+ height: auto;   
+}
+#footer
+{
+width: 100%;
+height: auto;
+background-color: #270f30 !important;
+margin-top: 5%;    
+display: block !important;
+}
+.page-link,
+.address,
+.newsletter
+{
+width: 50% !important;
+height: auto;
+margin: 2px;
+padding: 5px;    
+}
+}
+
+/* samll laptop */
+@media only screen and (max-width:1024px)
+{
+body 
+{
+margin: 0 !important;
+padding: 0 !important;   
+overflow-x: hidden !important;
+background-color: white !important;
+}
+
+#header
+{
+width: 100%;
+height: auto;
+display: flex;
+flex-wrap: wrap;    
+background-color: white;
+top: 0;
+position: sticky;
+z-index: 5;
+}
+.logo
+{
+width: 15% !important;
+height: auto;
+padding: 10px;    
+}
+.logo b 
+{
+font-size: 25px !important;
+letter-spacing: 1px;
+margin-left: 5%;    
+}
+.search
+{
+width: 50% !important;
+height: auto;
+padding: 10px;    
+}
+.search input 
+{
+width: 90% !important;
+height: auto;
+padding: 10px !important;    
+}
+.account
+{
+width: 22% !important;
+height: auto;
+padding: 10px !important;    
+}
+.account button 
+{
+ width: 100% !important;
+ height: auto;
+ padding: 2px;
+ margin-left: 0% !important;   
+ background-color: #3a81de;
+ border: none;
+ color: white;
+ font-size: 12px !important;
+}
+
+
+#navbar
+{
+width: 100%;
+height: auto;
+background-color: #3a81de;    
+}
+#navbar ul
+{
+margin-top: 0 !important;    
+}
+#navbar ul li 
+{
+ display: inline-block;
+ padding: 5px 8px !important;   
+}
+#navbar a 
+{
+ text-decoration: none;
+ list-style-type: none;
+ color: white;
+ text-transform: capitalize !important;   
+}
+#slider
+{
+width: 100% !important;
+height: 220px !important;
+margin: 0px;
+padding: 0px;
+margin-top: -2% !important;
+background: linear-gradient(rgba(100, 99, 99, 0.8),rgba(10, 9, 9, 0.8)),url('../images/blinkit.jpg');
+background-size: cover;
+background-position: center;    
+position: relative;
+}
+.slider-txt
+{
+width: 60%;
+height: auto;
+margin: auto;
+position: absolute;
+margin-left: 20%;
+text-align: center;    
+margin-top: 0% !important;
+color: white;
+}
+#content
+{
+ width: 100%;
+ height: auto;
+ margin: auto;
+ margin-top: 5%;
+ display: flex;
+ flex-wrap: wrap;   
+}
+.leftsidebar
+{
+width: 32% !important;
+height: auto;    
+background-color: #3a81de;
+}
+.leftsidebar ul li 
+{
+ display: block;
+ padding: 15px 2px !important;
+
+}
+.leftsidebar a 
+{
+ text-decoration: none;
+ list-style-type: none;
+ text-transform: capitalize;
+ color: white;
+ font-size: 18px !important;   
+}
+
+.rightsidebar
+{
+width: 60% !important;
+height: auto;    
+background-color: white;
+float: left;
+padding: 10px !important;
+}
+.products-items
+{
+width: 35% !important;
+height: auto;
+padding: 10px !important;
+box-shadow: 2px 2px 1px 1px lightgray; 
+margin: 0px;
+float: left;   
+}
+.products-items img 
+{
+ width: 100%;
+ height: auto;   
+}
+#footer
+{
+width: 100%;
+height: auto;
+background-color: #270f30 !important;
+margin-top: 5%;    
+display: block !important;
+}
+.page-link,
+.address,
+.newsletter
+{
+width: 50% !important;
+height: auto;
+margin: 2px;
+padding: 5px;    
+}   
+}
+
+/* large device */
+@media only screen and (max-width:1360px)
+{
+ body 
+{
+margin: 0 !important;
+padding: 0 !important;   
+overflow-x: hidden !important;
+background-color: white !important;
+}
+
+#header
+{
+width: 100%;
+height: auto;
+display: flex;
+flex-wrap: wrap;    
+background-color: white;
+top: 0;
+position: sticky;
+z-index: 5;
+}
+.logo
+{
+width: 15% !important;
+height: auto;
+padding: 10px;    
+}
+.logo b 
+{
+font-size: 25px !important;
+letter-spacing: 1px;
+margin-left: 5%;    
+}
+.search
+{
+width: 50% !important;
+height: auto;
+padding: 10px;    
+}
+.search input 
+{
+width: 90% !important;
+height: auto;
+padding: 10px !important;    
+}
+.account
+{
+width: 22% !important;
+height: auto;
+padding: 10px !important;    
+}
+.account button 
+{
+ width: 100% !important;
+ height: auto;
+ padding: 2px;
+ margin-left: 0% !important;   
+ background-color: #3a81de;
+ border: none;
+ color: white;
+ font-size: 12px !important;
+}
+
+
+#navbar
+{
+width: 100%;
+height: auto;
+background-color: #3a81de;    
+}
+#navbar ul
+{
+margin-top: 0 !important;    
+}
+#navbar ul li 
+{
+ display: inline-block;
+ padding: 5px 8px !important;   
+}
+#navbar a 
+{
+ text-decoration: none;
+ list-style-type: none;
+ color: white;
+ text-transform: capitalize !important;   
+}
+#slider
+{
+width: 100% !important;
+height: 220px !important;
+margin: 0px;
+padding: 0px;
+margin-top: -2% !important;
+background: linear-gradient(rgba(100, 99, 99, 0.8),rgba(10, 9, 9, 0.8)),url('../images/blinkit.jpg');
+background-size: cover;
+background-position: center;    
+position: relative;
+}
+.slider-txt
+{
+width: 60%;
+height: auto;
+margin: auto;
+position: absolute;
+margin-left: 20%;
+text-align: center;    
+margin-top: 0% !important;
+color: white;
+}
+#content
+{
+ width: 100%;
+ height: auto;
+ margin: auto;
+ margin-top: 5%;
+ display: flex;
+ flex-wrap: wrap;   
+}
+.leftsidebar
+{
+width: 32% !important;
+height: auto;    
+background-color: #3a81de;
+}
+.leftsidebar ul li 
+{
+ display: block;
+ padding: 15px 2px !important;
+
+}
+.leftsidebar a 
+{
+ text-decoration: none;
+ list-style-type: none;
+ text-transform: capitalize;
+ color: white;
+ font-size: 18px !important;   
+}
+
+.rightsidebar
+{
+width: 60% !important;
+height: auto;    
+background-color: white;
+float: left;
+padding: 10px !important;
+}
+.products-items
+{
+width: 35% !important;
+height: auto;
+padding: 10px !important;
+box-shadow: 2px 2px 1px 1px lightgray; 
+margin: 0px;
+float: left;   
+}
+.products-items img 
+{
+ width: 100%;
+ height: auto;   
+}
+#footer
+{
+width: 100%;
+height: auto;
+background-color: #270f30 !important;
+margin-top: 5%;    
+display: block !important;
+}
+.page-link,
+.address,
+.newsletter
+{
+width: 50% !important;
+height: auto;
+margin: 2px;
+padding: 5px;    
+}   
+}

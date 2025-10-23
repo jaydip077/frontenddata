@@ -1,0 +1,69 @@
+<<<<<<< HEAD
+
+body 
+{
+width: 100%;
+height: 600px;
+/* background: -webkit-linear-gradient(left,black,white,yellow);
+background: -moz-linear-gradient(left,black,white,yellow);
+background: -o-linear-gradient(left,black,white,yellow);    
+background: linear-gradient(to right,black,white,yellow); */
+
+/* background: -webkit-linear-gradient(left,black,white);
+background: -moz-linear-gradient(left,black,white);
+background: -o-linear-gradient(left,black,white);    
+background: linear-gradient(to right,black,white); */
+/* 
+background: -webkit-linear-gradient(top,black,white);
+background: -moz-linear-gradient(top,black,white);
+background: -o-linear-gradient(top,black,white);    
+background: linear-gradient(to bottom,black,white); */
+
+/* 
+background: -webkit-linear-gradient(top,black 50%,white 50%);
+background: -moz-linear-gradient(top,black 50%,white 50%);
+background: -o-linear-gradient(top,black 50%,white 50%);    
+background: linear-gradient(to bottom,black 50%,white 50%); */
+
+background: -webkit-linear-gradient(left,black 50%,white 50%);
+background: -moz-linear-gradient(left,black 50%,white 50%);
+background: -o-linear-gradient(left,black 50%,white 50%);    
+background: linear-gradient(to right,black 50%,white 50%);
+
+
+}
+=======
+
+body 
+{
+width: 100%;
+height: 600px;
+/* background: -webkit-linear-gradient(left,black,white,yellow);
+background: -moz-linear-gradient(left,black,white,yellow);
+background: -o-linear-gradient(left,black,white,yellow);    
+background: linear-gradient(to right,black,white,yellow); */
+
+/* background: -webkit-linear-gradient(left,black,white);
+background: -moz-linear-gradient(left,black,white);
+background: -o-linear-gradient(left,black,white);    
+background: linear-gradient(to right,black,white); */
+/* 
+background: -webkit-linear-gradient(top,black,white);
+background: -moz-linear-gradient(top,black,white);
+background: -o-linear-gradient(top,black,white);    
+background: linear-gradient(to bottom,black,white); */
+
+/* 
+background: -webkit-linear-gradient(top,black 50%,white 50%);
+background: -moz-linear-gradient(top,black 50%,white 50%);
+background: -o-linear-gradient(top,black 50%,white 50%);    
+background: linear-gradient(to bottom,black 50%,white 50%); */
+
+background: -webkit-linear-gradient(left,black 50%,white 50%);
+background: -moz-linear-gradient(left,black 50%,white 50%);
+background: -o-linear-gradient(left,black 50%,white 50%);    
+background: linear-gradient(to right,black 50%,white 50%);
+
+
+}
+>>>>>>> bf06621cdf7f1f438a1de426db740cb8ed09ee77

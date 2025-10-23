@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+   
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/css/font-awesome.min.css'>
+    <script src='main.js'></script>
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Task', 'Hours per Day'],
+          ['Present',     3],
+          ['Absant',      1],
+          
+        ]);
+
+        var options = {
+          title: 'My Daily Activities'
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+</head>
+<body>
+    <div id="main">
+        <section class="s1">
+            <div>
+                <h1>AMS app</h1>
+                <p>Good Day</p>
+            </div>
+            <div>
+                <img src="images/logo.png" alt="logo">
+                
+            </div>
+
+        </section>
+        <section class="s2">
+            <button class="add-btn">Add Attendance</button>
+            <br>
+            <hr>
+            <br>
+            <button class="manage-btn">Manage Attendance</button>
+
+            <div class="chart">
+                <div id="piechart" ></div>
+
+            </div>
+
+            <div class="table">
+                <table>
+                    <tr>
+                        <th>#</th>
+                        <th>Employee Name</th>
+                        <th>Date</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                    <tr >
+                        <td>1</td>
+                        <td>kshushi</td>
+                        <td>15-09-2025</td>
+                        <td>1</td>
+                        <td><span id="d" class="fa fa-trash"></span></td>
+                    </tr>
+                    <tr class="r1">
+                        <td>2</td>
+                        <td>inzamul</td>
+                        <td>15-09-2025</td>
+                        <td>1</td>
+                        <td><span id="d" class="fa fa-trash"></span></td>
+                    </tr >
+                     <tr >
+                        <td>3</td>
+                        <td>inzamul</td>
+                        <td>15-09-2025</td>
+                        <td>1</td>
+                        <td><span id="d" class="fa fa-trash"></span></td>
+                    </tr>
+                     <tr class="r2">
+                        <td>4</td>
+                        <td>brijesh</td>
+                        <td>15-09-2025</td>
+                        <td>0</td>
+                        <td><span id="d" class="fa fa-trash"></span></td>
+                    </tr>
+                </table>
+
+            </div>
+        </section>
+    </div>
+</body>
+</html>

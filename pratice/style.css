@@ -1,0 +1,115 @@
+/* fixed layout : fixed layout not provides default responsive content
+                  fixed layout provides width :px 
+                                        height:px    
+
+*/
+:root{
+    --primary-color: #ff3f6c;
+    --secondary-color: #00bfa5;
+    --font-color: #333;
+    --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --border-radius: 5px;
+    --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family);
+}
+body{
+    background-color: #f4f4f4;
+    color: var(--font-color);
+    line-height: 1.6;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-color: #fff;
+    overflow-x: hidden;
+}
+html h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    padding: 0;
+}
+
+html ul li 
+{
+margin: 0px;
+padding: 0px;    
+}
+.header{
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+/* header */
+#header{
+    width: 1420px;
+    height: auto;    
+    background-color:var(--primary-color);
+    border-bottom: solid gray 1px;
+    top: 0px;
+    position: sticky;
+    z-index: 10;
+}
+.header{
+    width: 1420px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+}
+.logo{
+    width: 240px;
+    height: auto;
+    font-size: 25px;
+    padding: 15px;
+}
+.search-box{
+    width: 720px;
+    height: auto;
+    padding: 15px;
+}
+.search-box input[type="text"]{
+    width: 700px;
+    height: auto;
+    border: none;
+    margin-top: 15px;
+    border-radius: var(--border-radius);
+    padding: 5px 10px;
+    font-size: 16px;
+}
+.social-media{
+    width: 160px;
+    height: auto;
+    padding: 15px;
+    letter-spacing: 5px;
+    margin-top: 15px;
+
+}
+#navbar{
+    width: 1420px;
+    height: 50px;
+    background-color: var(--secondary-color);
+    border-bottom: solid gray 1px;
+
+}
+.navbar{
+
+   margin-left: 400px;
+}
+.navbar a{
+
+    padding: 20px;
+    text-decoration: none;
+    color: var(--font-color);
+    margin-top: 5px;
+}
+/* slider */
+#slider{
+    width: 1420px;
+    height: 200px;
+    background-color: #ddd;
+    border-bottom: solid gray 1px;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Registration Form</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+    <script src='main.js'></script>
+</head>
+
+<body>
+    <h1 class="head">Student Registration Form</h1>
+    <form class="form">
+        <div class="first">
+            <label>First Name:</label>
+            <input type="text" placeholder="Enter Your First Name" required="" pattern="[A-Za-z]{3,6}" minlength="3"
+                maxlength="6">
+        </div>
+        <div class="last">
+            <label>Last Name:</label>
+            <input type="text" placeholder="Enter Your Last Name" required="">
+        </div>
+        <div class="mail">
+            <label>Email:</label>
+            <input type="email" placeholder="It Should Contain @" required="">
+        </div>
+        <div class="mobile">
+            <label>Moblie:</label>
+            <input type="tel" placeholder="Enter Your First Name" required="">
+        </div>
+        <div class="gender">
+            <label>Gender:</label>
+            <input type="radio" name="Gender" value="Male">Male
+            <input type="radio" name="Gender" value="Female">Female
+        </div>
+        <div class="dob">
+            <label>Date Of Birth:</label>
+            <input type="date" required>
+        </div>
+        <div class="add">
+            <label>Address:</label>
+            <textarea></textarea>
+        </div>
+        <div class="city">
+            <label>City:</label>
+            <input type="text" required>
+        </div>
+        <div class="area">
+            <label>Area Pin:</label>
+            <input type="text" required>
+        </div>
+        <div class="quali">
+            <label>Qualification:</label>
+            <select>
+                <option value="">Select Qualification:</option>
+                <option value="BCA">BCA</option>
+                <option value="BCA">B.Tech</option>
+                <option value="BCA">BBA</option>
+                <option value="BCA">B.Sc</option>
+            </select>
+        </div>
+        <div class="special">
+            <label>Specialization:</label>
+            <div class="opt">
+                <label><input type="checkbox" name="Specialization" value="Computer Science">Computer Science </label>
+                <label><input type="checkbox" name="Specialization" value="Information Technology">Information Technology </label>
+                <label><input type="checkbox" name="Specialization" value="Computer Architeture">Computer Architeture</label>
+                <label><input type="checkbox" name="Specialization" value="Tele Communication">Tele Communication</label>
+            </div>
+
+        </div>
+        <div class="pass">
+            <label>Password:</label>
+            <input type="password" required="">
+        </div>
+        <div class="btn">
+            <button value="submit">Register</button>
+        </div>
+    </form>
+</body>
+
+</html>

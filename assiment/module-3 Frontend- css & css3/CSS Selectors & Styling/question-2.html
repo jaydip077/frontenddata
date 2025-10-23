@@ -1,0 +1,35 @@
+<!-- 
+Explain the concept of CSS specificity.  
+
+--.->CSS specificity is a set of rules that determines which CSS style is applied to an element when multiple rules could apply. Specificity is calculated based on the types of selectors used:
+
+-> Inline styles (e.g., style="...") have the highest specificity.
+-> ID selectors (e.g., #id) are more specific than class selectors.
+-> Class selectors, attribute selectors, and pseudo-classes (e.g., .class, [type="text"], :hover) have medium specificity.
+-> Element selectors (e.g., div, p) and pseudo-elements (e.  g., ::before) have the lowest specificity.
+
+
+How do conflicts between multiple styles get resolved?
+
+--.>When multiple styles target the same element, the browser applies the style with the highest specificity. If two rules have the same specificity, the one that appears last in the CSS is used.
+
+-->
+
+
+<!-- 
+Explain the concept of CSS specificity. How do conflicts between multiple styles get resolved?  
+
+CSS specificity is a set of rules that determines which CSS style is applied to an element when multiple rules could apply. Specificity is calculated based on the types of selectors used:
+
+-> Inline styles (e.g., style="...") have the highest specificity.
+-> ID selectors (e.g., #id) are more specific than class selectors.
+-> Class selectors, attribute selectors, and pseudo-classes (e.g., .class, [type="text"], :hover) have medium specificity.
+-> Element selectors (e.g., div, p) and pseudo-elements (e.g., ::before) have the lowest specificity.
+
+Conflicts between multiple styles are resolved by:
+1. **Specificity**: The rule with the highest specificity wins.
+2. **Source order**: If specificity is equal, the rule that appears last in the CSS (or HTML) is applied.
+3. **!important**: A rule with `!important` overrides normal specificity, but if multiple `!important` rules apply, specificity and source order are used among them.
+
+This process ensures that the most relevant and specific style is applied to each element.
+-->

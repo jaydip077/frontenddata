@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<title>Movie admin panel</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+<script src='main.js'></script>
+</head>
+<body>
+<!--admin dashboard-->
+<section id="admin-main">
+<!--sidebar start here  -->
+<div class="admin-sidebar">
+    <ul class="sidebar-navlink">
+        <li><a href="#">dashboard</a></li>
+        <li><a href="#">manage users</a></li>
+        <li><a href="#">movie categories</a></li>
+        <li><a href="#">movies</a></li>
+        <li><a href="#">manage reviews</a></li>
+        <li><a href="#">manage contacts</a></li>
+        <li><a href="#">settings</a></li>
+        <li  class="active"><a href="#">logout</a></li>
+    </ul>
+</div>
+<!-- content -->
+<div class="admin-content">
+    <h1>Dashboard Overview</h1>
+ <div class="dashboard-overview">
+     <div class="admin-card">
+        <h1 align="center">Total Movies</h1>
+        <h2 align="center">120</h2>
+     </div>
+     <div class="admin-card">
+         <h1 align="center">Total Users</h1>
+        <h2 align="center"><span class="total-users">40</span></h2>
+     </div>
+     <div class="admin-card">
+         <h1 align="center">Active Session</h1>
+        <h2 align="center"><span>8</span></h2>
+     </div>
+     <div class="admin-card-wide">
+        <h2>Recent activity</h2>
+        <ul>
+            <li>Movie "Inception" added by Admin</li>
+            <li>User "john_doe" registered</li>
+            <li>Settings updated</li>
+        </ul>
+     </div>   
+
+      <div class="admin-card-wide">
+        <h2>Recent activity</h2>
+        <div id="chart_div"></div>
+     </div>  
+ </div>   
+</div> 
+</section> 
+<!-- footer -->
+<section id="admin-footer">
+<p>© 2025 Movies Admin Panel. All rights reserved. </p>   
+</section>
+
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+
+      // Load the Visualization API and the corechart package.
+      google.charts.load('current', {'packages':['corechart']});
+
+      // Set a callback to run when the Google Visualization API is loaded.
+      google.charts.setOnLoadCallback(drawChart);
+
+      // Callback that creates and populates a data table,
+      // instantiates the pie chart, passes in the data and
+      // draws it.
+      function drawChart() {
+
+        // Create the data table.
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Topping');
+        data.addColumn('number', 'Slices');
+        data.addRows([
+          ['Mushrooms', 3],
+          ['Onions', 1],
+          ['Olives', 1],
+          ['Zucchini', 1],
+          ['pizza', 8]
+        ]);
+
+        // Set chart options
+        var options = {'title':'How Much Pizza I Ate Last Night',
+                       'width':600,
+                       'height':500};
+
+        // Instantiate and draw our chart, passing in some options.
+        var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+        chart.draw(data, options);
+      }
+    </script>
+
+</body>
+</html>

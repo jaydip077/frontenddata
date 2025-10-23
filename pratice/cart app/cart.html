@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f9fafb;
+      color: #333;
+      line-height: 1.5;
+    }
+
+    /* Navbar */
+    header {
+      background: #fff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+      padding: 15px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header .logo {
+      font-size: 22px;
+      font-weight: bold;
+      color: #4f46e5;
+    }
+
+    nav a {
+      margin-left: 25px;
+      color: #333;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      color: #4f46e5;
+    }
+
+    /* Main Layout */
+    main {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    h1 {
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 20px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      padding: 20px;
+    }
+
+    .card h2 {
+      font-size: 18px;
+      margin-bottom: 15px;
+      font-weight: bold;
+    }
+
+    /* Cart Items */
+    .product {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #eee;
+      padding: 15px 0;
+    }
+
+    .product:last-child {
+      border-bottom: none;
+    }
+
+    .product p {
+      margin: 3px 0;
+    }
+
+    .price {
+      color: #4f46e5;
+      font-weight: bold;
+    }
+
+    .qty {
+      width: 50px;
+      text-align: center;
+      padding: 5px;
+    }
+
+    .remove {
+      color: red;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .remove:hover {
+      text-decoration: underline;
+    }
+
+    .continue {
+      display: inline-block;
+      margin-top: 15px;
+      color: #4f46e5;
+      text-decoration: none;
+    }
+
+    .continue:hover {
+      text-decoration: underline;
+    }
+
+    /* Order Summary */
+    .summary div {
+      display: flex;
+      justify-content: space-between;
+      margin: 8px 0;
+      color: #555;
+    }
+
+    .summary .total {
+      font-weight: bold;
+      font-size: 18px;
+      color: #000;
+    }
+
+    .checkout-btn {
+      width: 100%;
+      background: #4f46e5;
+      color: #fff;
+      padding: 12px;
+      border: none;
+      border-radius: 6px;
+      margin-top: 20px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .checkout-btn:hover {
+      background: #4338ca;
+    }
+
+    .coupon {
+      margin-top: 20px;
+    }
+
+    .coupon input {
+      width: 70%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px 0 0 6px;
+    }
+
+    .coupon button {
+      padding: 10px 15px;
+      border: none;
+      background: #e5e7eb;
+      border-radius: 0 6px 6px 0;
+      cursor: pointer;
+    }
+
+    .coupon button:hover {
+      background: #d1d5db;
+    }
+
+    /* Footer */
+    footer {
+      background: #111827;
+      color: #d1d5db;
+      margin-top: 40px;
+      padding: 40px 50px;
+    }
+
+    footer .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      margin-bottom: 20px;
+    }
+
+    footer h3 {
+      color: #fff;
+      margin-bottom: 10px;
+    }
+
+    footer a {
+      display: block;
+      margin: 4px 0;
+      color: #d1d5db;
+      font-size: 14px;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    footer .bottom {
+      text-align: center;
+      font-size: 14px;
+      border-top: 1px solid #374151;
+      padding-top: 15px;
+      margin-top: 20px;
+      color: #9ca3af;
+    }
+
+    @media(max-width: 768px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+      footer .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media(max-width: 500px) {
+      footer .footer-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header>
+    <div class="logo">E-Shop</div>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Products</a>
+      <a href="#">Cart</a>
+    </nav>
+  </header>
+
+  <!-- Main -->
+  <main>
+    <h1>Your Shopping Cart</h1>
+
+    <div class="grid">
+      <!-- Cart Items -->
+      <div class="card">
+        <h2>3 Items in Cart</h2>
+
+        <div class="product">
+          <div>
+            <p><strong>Product 1</strong></p>
+            <p>Premium Leather Backpack</p>
+            <p class="small">Color: Black | Size: One Size</p>
+            <p class="price">$129.00</p>
+          </div>
+          <div>
+            Qty: <input type="number" class="qty" value="1">
+            <a href="#" class="remove">Remove</a>
+          </div>
+        </div>
+
+        <div class="product">
+          <div>
+            <p><strong>Product 2</strong></p>
+            <p>Minimalist Sneaker</p>
+            <p class="small">Color: White | Size: 10</p>
+            <p class="price">$75.00</p>
+          </div>
+          <div>
+            Qty: <input type="number" class="qty" value="5">
+            <a href="#" class="remove">Remove</a>
+          </div>
+        </div>
+
+        <a href="#" class="continue">&larr; Continue Shopping</a>
+      </div>
+
+      <!-- Order Summary -->
+      <div>
+        <div class="card summary">
+          <h2>Order Summary</h2>
+          <div><span>Subtotal (3 items)</span><span>$279.00</span></div>
+          <div><span>Shipping Estimate</span><span>$15.00</span></div>
+          <div><span>Tax Estimate (8%)</span><span>$22.32</span></div>
+          <div class="total"><span>Order Total</span><span>$316.32</span></div>
+          <button class="checkout-btn">Proceed to Checkout</button>
+        </div>
+
+        <div class="card coupon">
+          <h2>Apply Coupon</h2>
+          <div>
+            <input type="text" placeholder="Coupon Code">
+            <button>Apply</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <h3>E-Shop</h3>
+        <p style="font-size:14px;">Quality products delivered to your door. We focus on sustainable and ethical commerce.</p>
+        <a href="#">Facebook</a>
+        <a href="#">Twitter</a>
+        <a href="#">Instagram</a>
+      </div>
+      <div>
+        <h3>Quick Links</h3>
+        <a href="#">About Us</a>
+        <a href="#">Contact</a>
+        <a href="#">FAQ</a>
+        <a href="#">Blog</a>
+      </div>
+      <div>
+        <h3>Policies</h3>
+        <a href="#">Terms of Service</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Shipping & Returns</a>
+        <a href="#">Cookie Settings</a>
+      </div>
+      <div>
+        <h3>Support</h3>
+        <a href="#">Email Support</a>
+        <a href="#">Call Us: (555) 123-4567</a>
+        <a href="#">Mon - Fri: 9am - 5pm</a>
+      </div>
+    </div>
+    <div class="bottom">© 2024 E-Shop, Inc. All rights reserved.</div>
+  </footer>
+
+</body>
+</html>

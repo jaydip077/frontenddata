@@ -1,0 +1,55 @@
+<!-- : Describe the grid-template-columns, grid-template-rows, and grid- gap 
+properties. Provide examples of how to use them.
+
+
+grid-template-columns:
+grid-template-columns property is used to define the number and size of columns in a CSS grid layout.
+
+grid-template-rows:
+This defines the number of rows and their heights in the grid layout.
+
+grid-gap:
+This property defines the spacing between grid rows and columns.
+-->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>grid layout</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+
+    <style>
+.container {
+  display: grid;
+  grid-template-columns: 20% 55% 20%;
+  grid-template-rows: 200% 200%;
+  gap: 20px;
+  background-color: #f0f0f0;
+  padding: 10px;
+}
+.item {
+  background-color: #4CAF50;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+</style>
+</head>
+<body>
+    <div class="container">
+  <div class="item">1</div>
+  <div class="item">2</div>
+  <div class="item">3</div>
+  <div class="item">4</div>
+  <div class="item">5</div>
+  <div class="item">6</div>
+</div>
+</body>
+</html>

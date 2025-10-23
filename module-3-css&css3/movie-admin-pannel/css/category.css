@@ -1,0 +1,47 @@
+*{
+    background-color: black;
+}
+
+.action div{
+            display: inline-block;
+            color: white;
+           
+        }
+
+        .img img{
+            width: 250px;
+            height: 350px;
+            margin: 10px;
+            border-radius: 10px;
+            padding: 15px;
+            
+        }
+
+        .name{
+            margin-left: 10px;
+            font-size: 20px;
+            font-weight: bold;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: white;
+        
+        }
+
+.comedy div{
+            display: inline-block;
+           
+        }
+
+        .img img{
+            width: 250px;
+            height: 350px;
+            margin: 10px;
+            border-radius: 10px;
+            color: white;
+        }
+
+        .name{
+            margin-left: 10px;
+            font-size: 20px;
+            font-weight: bold;
+            color: white;
+        }
